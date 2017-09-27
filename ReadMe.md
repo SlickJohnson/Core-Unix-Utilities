@@ -36,10 +36,15 @@ Challenges within each section are meant to be solved in order.
 1.  Set a variable `NAME` equal to your first name, then print its value
     - `NAME=Willie` then `print $NAME`
 1.  Set a variable `FULL_NAME` equal to your full name, then print its value
+    - `FULL_NAME="Willie Johnson"`
 1.  Print all environment variables (names and values)
+    - `printenv`
 1.  Make an alias named `hello` that prints `Hello world`
+    - `alias hello="print Hello \World"`
 1.  Make an alias named `gocode` that navigates to your code directory
+    - `alias gocode="~\Documents\GitHub"`
 1.  Print all aliases (names and values)
+    - `alias`
 
 ### Getting Help
 

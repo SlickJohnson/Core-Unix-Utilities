@@ -89,15 +89,23 @@ Challenges within each section are meant to be solved in order.
     - `rm Shelter`
 1.  Now cry because you just deleted those poor tiny animals
     - `Cry`
-    
+
 ### Permissions
 
 1.  Print out your user name
+    - `print $USER`
 1.  List the permissions (and metadata) of all `.txt` files
+    - `ls -l ./**/*.txt`
 1.  Give all users write permission on the file `Cats.txt`
+    - `chmod a+r+w Cats.txt`
 1.  List the permissions (and metadata) of the file `Cats.txt`
+    - `ls -l Cats.txt`
 1.  Change the owner of the file `Cats.txt` to another user
+    - `sudo chown nobody Cats.txt`
 1.  Now list the permissions (and owner) of the file `Cats.txt`
 1.  Try to change the owner of the file `Cats.txt` back to yourself
+    - `chown $USER Cats.txt`
 1.  Invoke the super-user to make the previous command succeed
+    - `sudo chown nobody Cats.txt`
 1.  List the permissions (and owner) of the file `Cats.txt` again
+    - `ls -l Cats.txt`

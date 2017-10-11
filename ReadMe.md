@@ -51,9 +51,9 @@ Challenges within each section are meant to be solved in order.
 ### Variables
 
 1.  Print a sentence, like `Hello world`
-    - `print Hello \World`
+    - `echo Hello \World`
 1.  Print a variable value, like `$USER` or `$PATH`
-    - `print $USER` or `print $PATH`
+    - `echo $USER` or `echo $PATH`
 1.  Set a variable `NAME` equal to your first name, then print its value
     - `NAME=Willie` then `print $NAME`
 1.  Set a variable `FULL_NAME` equal to your full name, then print its value
@@ -139,18 +139,31 @@ Challenges within each section are meant to be solved in order.
 ### Streams
 
 1.  Print a sentence like `Hello world` into a file named `test.txt`
+    - `echo "Hello world" >> test.txt`
 1.  Append another sentence `Hola Mundo` on a new line of `test.txt`
+    - `echo "Hello world" >> Hola Mundo`
 1.  Print the contents of the file `test.txt`
+    - `cat test.txt`
 1.  Print the contents of the file `numbers.txt`
+    - `cat numbers.txt`
 1.  Print the first 10 lines in the file `numbers.txt`
+    - `cat numbers.txt`
 1.  Print the first 5 lines in the file `numbers.txt`
+    - `head -5 numbers.txt`
 1.  Print the last 10 lines in the file `numbers.txt`
+    - `tail -10 numbers.txt`
 1.  Print the last 5 lines in the file `numbers.txt`
+    - `tail -5 numbers.txt`
 1.  Print lines 6 through 10 in the file `numbers.txt`
+    - `head -6 numbers.txt | tail -10`
 1.  Sort all lines in the file `numbers.txt`
+    - `sort numbers.txt`
 1.  Print the first 2 characters of each line in `numbers.txt`
+    - `cut -c-2 numbers.txt`
 1.  Print only characters 9-16 of each line in `numbers.txt`
+    - `awk '{print substr($0,9,16)}' numbers.txt`
 1.  Sort the first 2 characters of each line in `numbers.txt`
+    - `awk '{print sort($0,2)}' numbers.txt`
 1.  Print only the unique first 2 characters of each line in `numbers.txt`
 1.  Replace all `o`s with `0`s in file `test.txt`
 1.  Capitalize all letters in the file `test.txt`
